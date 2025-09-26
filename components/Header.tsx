@@ -9,12 +9,11 @@ export function Header() {
     // fixed: always visible, full-width; high z-index to sit above blobs
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="container">
-        <div className="mt-3 h-14 flex items-center justify-between rounded-full border border-border/80 bg-bg/70 backdrop-blur supports-[backdrop-filter]:bg-bg/60 px-2 shadow-soft">
-          <a href="#home" className="flex items-center gap-2 rounded-full px-3 py-2">
+        <div className="mt-3 h-14 flex items-center justify-between rounded-full border border-border bg-[var(--bg-veil)] backdrop-blur supports-[backdrop-filter]:bg-[var(--bg-veil)] px-2 shadow-soft">          <a href="#home" className="flex items-center gap-2 rounded-full px-3 py-2">
             <svg width="22" height="22" viewBox="0 0 64 64" className="opacity-80">
               <defs>
                 <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-                  <stop stopColor="#9aa7ff"/><stop offset="1" stopColor="#1bb2ce"/>
+                  <stop stopColor="var(--accent)"/><stop offset="1" stopColor="var(--accent-2)"/>
                 </linearGradient>
               </defs>
               <rect width="64" height="64" rx="16" fill="url(#g)" opacity=".25"/>
